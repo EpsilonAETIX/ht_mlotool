@@ -193,8 +193,8 @@ if (isEnvBrowser()) {
 
 ReactDOM.render(
   <React.StrictMode>
-    <MantineProvider withNormalizeCSS withGlobalStyles theme={customTheme}>
-      <ModalsProvider modalProps={{ transition: 'slide-up' }}>
+    <MantineProvider defaultColorScheme='dark' theme={customTheme}>
+      <ModalsProvider modalProps={{ transitionProps: { transition: 'slide-up' }}}>
         <HashRouter>
           <App />
         </HashRouter>

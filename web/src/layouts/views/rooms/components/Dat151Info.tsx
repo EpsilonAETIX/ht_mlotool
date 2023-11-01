@@ -63,7 +63,7 @@ const Dat151Info: React.FC = () => {
   }, [activeRoom]);
 
   return (
-    <Grid columns={4} gutter='xs' justify='center' sx={{fontSize: 12, overflow: 'auto', maxHeight: 450 }}>
+    <Grid columns={4} gutter='xs' justify='center' style={{fontSize: 12, overflow: 'auto', maxHeight: 450 }}>
       <Input
         label='Flags'
         inputType='text'

@@ -6,7 +6,7 @@ const RoomInfo: React.FC = () => {
   const activeRoom = useRoomsStore((state) => state.activeRoom);
 
   return (
-    <Grid columns={4} gutter='xs' justify='center' sx={{ fontSize: 12, overflow: 'auto', maxHeight: 450 }}>
+    <Grid columns={4} gutter='xs' justify='center' style={{ fontSize: 12, overflow: 'auto', maxHeight: 450 }}>
       <Input
         label='Room Name'
         inputType='text'

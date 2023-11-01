@@ -34,7 +34,7 @@ const Input: React.FC<Props> = ({ label, inputType, infoCircle, span, value, set
             error={error}
             rightSection={
               infoCircle && (
-                <Tooltip label={infoCircle} withArrow arrowSize={10} multiline width={200}>
+                <Tooltip label={infoCircle} withArrow arrowSize={10} multiline style={{ width: 200 }}>
                   <ThemeIcon variant='light'>
                     <BsQuestionCircle size={18} />
                   </ThemeIcon>
@@ -45,7 +45,8 @@ const Input: React.FC<Props> = ({ label, inputType, infoCircle, span, value, set
         ) : (valueType === 'number' || inputType === 'number') ? (
           <NumberInput
             label={label}
-            precision={precision || 0}
+            decimalScale={precision || 0}
+            fixedDecimalScale={precision !== undefined}
             max={max || undefined}
             min={min || undefined}
             value={Number(value)}
@@ -57,7 +58,7 @@ const Input: React.FC<Props> = ({ label, inputType, infoCircle, span, value, set
             hideControls
             rightSection={
               infoCircle && (
-                <Tooltip label={infoCircle} withArrow arrowSize={10} multiline width={200}>
+                <Tooltip label={infoCircle} withArrow arrowSize={10} multiline style={{ width: 200 }}>
                   <ThemeIcon variant='light' mr={10}>
                     <BsQuestionCircle size={18} />
                   </ThemeIcon>

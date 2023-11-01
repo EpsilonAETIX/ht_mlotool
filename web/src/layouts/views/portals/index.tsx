@@ -4,7 +4,7 @@ import PortalsInfo from "./components/PortalsInfo";
 
 const Portals: React.FC = () => {
   return (
-    <Stack sx={{ width: '100%' }} justify='space-between'>
+    <Stack style={{ width: '100%' }} justify='space-between'>
       <RoomSelect />
       <Divider size='sm' />
       <PortalsInfo />

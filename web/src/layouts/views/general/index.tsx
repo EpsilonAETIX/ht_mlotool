@@ -5,7 +5,7 @@ import Settings from "./components/Settings";
 
 const General: React.FC = () => {
   return (
-    <Stack justify='space-between' sx={{ height: '100%' }}>
+    <Stack justify='space-between' style={{ height: '100%' }}>
       <Info />
       <Divider size='sm' />
       <Settings />

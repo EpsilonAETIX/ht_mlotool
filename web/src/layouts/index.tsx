@@ -24,21 +24,21 @@ const Occlusion: React.FC = () => {
   });
 
   return (
-    <Box sx={{ height: '90%', display: 'flex' }}>
+    <Box style={{ height: '90%', display: 'flex' }}>
       <Tabs
         orientation='vertical'
         color='blue'
-        sx={{ height: '100%' }}
+        style={{ height: '100%' }}
         value={location.pathname.substring(11)}
-        onTabChange={(value) => navigate(`/occlusion/${value}`)}
+        onChange={(value) => navigate(`/occlusion/${value}`)}
       >
         <Tabs.List>
-          <Tabs.Tab value='general' icon={<TbHome size={20} />}>General</Tabs.Tab>
-          <Tabs.Tab value='rooms' icon={<TbBox size={20} />}>Rooms</Tabs.Tab>
-          <Tabs.Tab value='portals' icon={<TbDoor size={20} />}>Portals</Tabs.Tab>
+          <Tabs.Tab value='general' leftSection={<TbHome size={20} />}>General</Tabs.Tab>
+          <Tabs.Tab value='rooms' leftSection={<TbBox size={20} />}>Rooms</Tabs.Tab>
+          <Tabs.Tab value='portals' leftSection={<TbDoor size={20} />}>Portals</Tabs.Tab>
         </Tabs.List>
       </Tabs>
-      <Stack p={16} sx={{ width: '100%' }} justify='space-between'>
+      <Stack p={16} style={{ width: '100%' }} justify='space-between'>
         <Routes>
           <Route path='/general' element={<General />} />
           <Route path='/rooms' element={<Rooms />} />

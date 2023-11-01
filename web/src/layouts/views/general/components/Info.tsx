@@ -30,7 +30,7 @@ const Info: React.FC = () => {
 
   return (
     <Box>
-      <Grid columns={2} gutter='xs' sx={{ fontSize: 16, overflow: 'auto', maxHeight: 385 }}>
+      <Grid columns={2} gutter='xs' style={{ fontSize: 16, overflow: 'auto', maxHeight: 385 }}>
         <Input
           label='MLO Save Name'
           inputType='text'

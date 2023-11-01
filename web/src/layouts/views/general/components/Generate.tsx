@@ -36,7 +36,7 @@ const Generate: React.FC = () => {
 
   return (
     <Center p={16}>
-      <Button color={color} uppercase onClick={handleSubmit} fullWidth>{buttonText}</Button>
+      <Button color={color} style={{ textTransform: 'uppercase' }} onClick={handleSubmit} fullWidth>{buttonText}</Button>
     </Center>
   );
 };

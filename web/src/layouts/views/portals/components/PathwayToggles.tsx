@@ -27,7 +27,7 @@ const PathwayToggles: React.FC<Props> = ({ portal }) => {
   }, [enabledState])
 
   return (
-    <Group position='center'>
+    <Group justify='center'>
       <Checkbox
         checked={enabledState[0]}
         onChange={(e) => setEnabledState([ e.currentTarget.checked, enabledState[1] ])}

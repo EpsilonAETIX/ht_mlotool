@@ -27,7 +27,7 @@ const RoomSelect: React.FC = () => {
       onChange={handleSelect}
       placeholder='Pick a room'
       searchable
-      nothingFound='No room found'
+      nothingFoundMessage='No room found'
       maxDropdownHeight={200}
       data={roomSelectList}
     />

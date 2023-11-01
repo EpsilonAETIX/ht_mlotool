@@ -6,7 +6,7 @@ const PortalsInfo: React.FC = () => {
   const activeRoom = useRoomsStore((state) => state.activeRoom);
 
   return (
-    <Stack p={5} sx={{ width: '100%', overflow:'auto', maxHeight: 485 }}>
+    <Stack p={5} style={{ width: '100%', overflow:'auto', maxHeight: 485 }}>
       {activeRoom?.portalCount
         && <RoomPortals roomIndex={activeRoom.index}/>
         || <Alert>No Portals Found!</Alert>}

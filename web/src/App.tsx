@@ -49,10 +49,10 @@ const App: React.FC = () => {
   ])
 
   return (
-    <Box className={classes.container} bg="">
+    <Box className={classes.container} bg="black" c="orange">
       <Transition transition='slide-up' mounted={visible}>
       {(style) => (
-      <Box bg="red">
+      <Box bg="red" c="cyan">
         <Button>Hello World</Button>
       </Box>
 
